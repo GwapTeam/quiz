@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>結果画面</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/quiz.css">
+    <script src="js/quiz.js"></script>
+
+</head>
+<body id=quiz onload="backColor();kekka();" style="margin-top:5em;">
+<section style="margin-top: 3em;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-offset-4 col-sm-4" style="font-size: 4em">
+                <h1>結果表示画面</h1>
+            </div>
+        </div>
+        <div class="row">
+            <table class="table" style="font-size: 2em;">
+                <tr>
+                    <td>正解数</td>
+                    <td>不正解数</td>
+                    <td>正答率</td>
+                </tr>
+                <tr>
+                    <td id="seikai">error</td>
+                    <td id="huseikai">error</td>
+                    <td id="seitouritu">error</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+<section>
+    <div>
+        <input id="buttonA" 
+               class="input-lg btn-default btn-lg" 
+               style="height: 300%"
+               type="button" value="もう一度...!" 
+               onclick="location.href='quiz_question.html'"
+        >
+    </div>
+</section>
+</body>
+</html>
