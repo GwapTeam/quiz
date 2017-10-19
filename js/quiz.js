@@ -18,16 +18,20 @@ function updateQuestion() {
 function questionJudge(check) {
 
     if (check == answerList[index]) {
-        swal("正解", index + 1 + "問目終了。", "success");
+        swal("正解", index + 1 + "問目終了。", "success")
+            .then(checkIndex)
         score++;
     } else {
-        swal("不正解", index + 1 + "問目終了。", "error");
+        swal("不正解", index + 1 + "問目終了。", "error")
+            .then(checkIndex)
     }
+}
 
-  	if(index >= quizzes.length - 1) {
+function checkIndex() {
+    if(index >= quizzes.length - 1) {
         localStorage.setItem("score", score);
-    		location.href="quiz-result.html";
-  	}
+        location.href="quiz-result.html";
+    }
 
     index++;
     updateQuestion()
