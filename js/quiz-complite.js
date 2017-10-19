@@ -26,10 +26,9 @@ function questionJudge(check) {
 
     if(index >= quizzes.length - 1) {
         localStorage.setItem("score", score);
-        localStorage.setItem("quizCount", quizzes.length);
         location.href="quiz-result-complite.html";
     }
 
     index++;
-    updateQuestion();
+    updateQuestion()
 }

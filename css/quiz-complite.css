@@ -19,6 +19,11 @@ button {
     cursor: pointer;
     text-decoration: none;
     color: #555;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: pink;
 }
 
 section,
