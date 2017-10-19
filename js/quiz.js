@@ -8,20 +8,20 @@ var quizzes = [
 ];  //問題のリスト
 var answerList   = [0, 1, 1, 1, 0, 1];   //0の時NOを選ぶと正解、1の時YESを選ぶと正解
 var score        = 0;                    //正解数
-var count        = 0;                    //現在の回答数
+var index        = 0;                    //現在の回答数
 var question     = document.getElementById("question");
 
 function updateQuestion() {
-    question.innerText = quizzes[count];
+    question.innerText = quizzes[index];
 }
 
 function questionJudge(check) {
 
-    if (check == answerList[count]) {
-        swal("正解", count + "問目終了。", "success");
+    if (check == answerList[index]) {
+        swal("正解", index + 1 + "問目終了。", "success");
         score++;
     } else {
-        swal("不正解", count + "問目終了。", "error");
+        swal("不正解", index + 1 + "問目終了。", "error");
     }
 
   	if(count >= quizzes.length - 1) {
@@ -29,7 +29,7 @@ function questionJudge(check) {
     		location.href="quiz-result.html";
   	}
 
-    count++;
+    index++;
     updateQuestion()
 }
 
