@@ -25,7 +25,6 @@ function questionJudge(check) {
     }
 
   	if(count >= quizzes.length - 1) {
-        //まほうのことば
         localStorage.setItem("score", score);
     		location.href="quiz-result.html";
   	}
@@ -35,9 +34,9 @@ function questionJudge(check) {
 }
 
 function result() {
-    var score   = localStorage.getItem("score");            //正解数
-    var incorrect = quizzes.length - score;                 //不正解数(正解数ー問題数)
-    var percentage = Math.round(score/quizzes.length * 100);//正答率を求める
+    var score   = localStorage.getItem("score");
+    var incorrect = quizzes.length - score;
+    var percentage = Math.round(score/quizzes.length * 100);
     document.getElementById("score").innerText = score;
     document.getElementById("incorrect").innerText = incorrect;
     document.getElementById("percentage").innerText = percentage + "%"

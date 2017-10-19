@@ -39,3 +39,15 @@ body {
 body {
     background-color: lightgreen;
 }
+
+table {
+    font-size: 3rem;
+}
+
+tr > * {  
+      padding: 0rem 2rem;
+}
+
+td {
+    text-align: center;
+}
