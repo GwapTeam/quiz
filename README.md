@@ -30,7 +30,7 @@ $ git clone -b master --recursive -j8 git@github.com:GwapTeam/quiz.git
 
 _Branch: `development`_
 ```bash
-$ git clone -b development --recursive -j8 git@github.com:GwapTeam/quiz.git
+$ git clone -b develop --recursive -j8 git@github.com:GwapTeam/quiz.git
 ```
 
 _Branch: `feature`_
