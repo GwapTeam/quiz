@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>問題</title>
-    <link href="css/quiz.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/quiz.css" rel="stylesheet">
 
 </head>
 <body
     id="quiz"
-    onload="updateQuestion();"
 >
     <section>
         <h1
@@ -19,16 +19,10 @@
             Q.###ここに問題###
         </h1>
         <div>
-            <button
-                id="buttonA"
-                onclick="questionJudge(1);"
-            >
+            <button>
                 YES
             </button>
-            <button
-                id="buttonB"
-                onclick="questionJudge(0);"
-            >
+            <button>
                 NO
             </button>
         </div>

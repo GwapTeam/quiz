@@ -8,14 +8,29 @@ Open html file using chrome.
 ### files
 ```
 quiz
+.
 ├── README.md
 ├── css
-│   └── quiz.css()
+│   ├── quiz-complite.css(Student editing)
+│   ├── quiz-extra.css(Student editing)
+│   └── quiz.css(Student editing)
 ├── js
+│   ├── quiz-complite.js(Student editing)
+│   ├── quiz-extra.js(Student editing)
+│   ├── quiz-result-complite.js(Student editing)
+│   ├── quiz-result-extra.js(Student editing)
+│   ├── quiz-result.js(Student editing)
 │   └── quiz.js(Student editing)
-├── quiz-question.html()
-├── quiz-result.html()
-└── quiz-start.html()
+├── quiz-question-complite.html(Student editing)
+├── quiz-question-extra.html(Student editing)
+├── quiz-question.html(Student editing)
+├── quiz-result-complite.html(Student editing)
+├── quiz-result-extra.html(Student editing)
+├── quiz-result.html(Student editing)
+├── quiz-start-complite.html(Student unedited)
+├── quiz-start-extra.html(Student unedited)
+├── quiz-start.html(Student unedited)
+└── vendor
 ```
 
 ### submodule
@@ -106,7 +121,7 @@ Tab Space         : 4space
 
 Use [ECMAScript5](https://www.ecma-international.org/ecma-262/6.0/)
 
-Tab Space     : 2space
+Tab Space     : 4space
 String literal: double quote
 
 Case: Variable declaration
@@ -138,5 +153,3 @@ setTimeout(
 ```
 
 reference: http://cou929.nu/data/google_javascript_style_guide/
-
-
