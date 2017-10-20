@@ -1,4 +1,4 @@
-completevar quizzes = [
+var quizzes = [
     "テトリスを作ったのは日本人である",
     "１円玉の直径は2cmである",
     "塩はカロリー0である",
