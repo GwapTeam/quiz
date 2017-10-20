@@ -1,4 +1,4 @@
-# quiz
+﻿# quiz
 https://github.com/GwapTeam/quiz
 
 ## Overview
@@ -11,23 +11,23 @@ quiz
 .
 ├── README.md
 ├── css
-│   ├── quiz-complite.css(Student editing)
+│   ├── quiz-complete.css(Student editing)
 │   ├── quiz-extra.css(Student editing)
 │   └── quiz.css(Student editing)
 ├── js
-│   ├── quiz-complite.js(Student editing)
+│   ├── quiz-complete.js(Student editing)
 │   ├── quiz-extra.js(Student editing)
-│   ├── quiz-result-complite.js(Student editing)
+│   ├── quiz-result-complete.js(Student editing)
 │   ├── quiz-result-extra.js(Student editing)
 │   ├── quiz-result.js(Student editing)
 │   └── quiz.js(Student editing)
-├── quiz-question-complite.html(Student editing)
+├── quiz-question-complete.html(Student editing)
 ├── quiz-question-extra.html(Student editing)
 ├── quiz-question.html(Student editing)
-├── quiz-result-complite.html(Student editing)
+├── quiz-result-complete.html(Student editing)
 ├── quiz-result-extra.html(Student editing)
 ├── quiz-result.html(Student editing)
-├── quiz-start-complite.html(Student unedited)
+├── quiz-start-complete.html(Student unedited)
 ├── quiz-start-extra.html(Student unedited)
 ├── quiz-start.html(Student unedited)
 └── vendor
