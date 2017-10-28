@@ -5,5 +5,5 @@ function result() {
     var percentage = Math.round(score/quizCount * 100);
     document.getElementById("score").innerText = score;
     document.getElementById("missCount").innerText = missCount;
-    document.getElementById("percentage").innerText = percentage + "%"
+    document.getElementById("percentage").innerText = percentage + "%";
 }
