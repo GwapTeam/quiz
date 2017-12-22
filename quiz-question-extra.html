@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>問題</title>
-    <link rel="stylesheet" href="css/quiz.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/quiz-extra.css">
 
 </head>
 <body
     id="quiz"
+    onload="updateQuestion();"
 >
     <section>
         <h1
@@ -19,14 +20,18 @@
             Q.###ここに問題###
         </h1>
         <div>
-            <button>
+            <button
+                onclick="questionJudge(1);"
+            >
                 YES
             </button>
-            <button>
+            <button
+                onclick="questionJudge(0);"
+            >
                 NO
             </button>
         </div>
     </section>
-    <script src="js/quiz.js"></script>
+    <script src="js/quiz-extra.js"></script>
 </body>
 </html>

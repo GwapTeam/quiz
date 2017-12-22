@@ -6,32 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>結果画面</title>
-    <link rel="stylesheet" type="text/css" href="css/quiz.css">
+    <link rel="stylesheet" type="text/css" href="css/quiz-extra.css">
 
 </head>
-<body>
+<body
+    onload="result();"
+>
     <section>
         <h1>結果表示画面</h1>
         <table>
             <thead>
                 <tr>
                     <th>正解数</th>
+                    <th>不正解数</th>
+                    <th>正答率</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td id="score"></td>
+                    <td id="missCount"></td>
+                    <td id="percentage"></td>
                 </tr>
             </tbody>
         </table>
     </section>
     <section>
         <a
-           href="quiz-question.html"
+           href="quiz-question-extra.html"
         >
             もう一度...!
         </a>
     </section>
-    <script src="js/quiz-result.js"></script>
+    <script src="js/quiz-result-extra.js"></script>
 </body>
 </html>
