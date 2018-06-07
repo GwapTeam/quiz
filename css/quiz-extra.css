@@ -46,9 +46,11 @@ button:before {
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
 }
+
 button:hover{
     color: white;
 }
+
 button:hover:before {
     transform: scaleY(1);
 }
