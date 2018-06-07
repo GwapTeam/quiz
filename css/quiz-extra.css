@@ -5,6 +5,11 @@ html {
 h1 {
     font-family: monospace;
     font-size: 3rem;
+    color:lightgreen;
+}
+
+h1:first-line {
+    color:black;
 }
 
 a,
@@ -20,11 +25,34 @@ button {
     text-decoration: none;
     color: #555;
     border-radius: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #2098D1;
+    transform: scaleY(0);
+    transform-origin: 50%;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+button:hover{
+    color: white;
+}
+button:hover:before {
+    transform: scaleY(1);
 }
 
-button:hover {
-    background-color: pink;
-}
 
 section,
 body {

@@ -31,5 +31,6 @@ function questionJudge(check) {
     }
 
     index++;
+    
     updateQuestion();
 }
